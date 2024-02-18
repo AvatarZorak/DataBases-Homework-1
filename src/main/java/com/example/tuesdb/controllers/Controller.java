@@ -1,6 +1,6 @@
 package com.example.tuesdb.controllers;
 
-import com.example.tuesdb.dtos.UserInputDto;
+import com.example.tuesdb.dtos.UserDtos.UserInputDto;
 import com.example.tuesdb.repositories.TuesRepository;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;

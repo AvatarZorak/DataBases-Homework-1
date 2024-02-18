@@ -1,23 +1,18 @@
 package com.example.tuesdb.repositories;
 
-import com.example.tuesdb.dtos.GroupOutputDto;
-import com.example.tuesdb.dtos.PermissionOutputDto;
-import com.example.tuesdb.dtos.UserInputDto;
-import com.example.tuesdb.dtos.UserOutputDto;
+import com.example.tuesdb.dtos.GroupDtos.GroupOutputDto;
+import com.example.tuesdb.dtos.PermissionDtos.PermissionOutputDto;
+import com.example.tuesdb.dtos.UserDtos.UserInputDto;
+import com.example.tuesdb.dtos.UserDtos.UserOutputDto;
 import com.example.tuesdb.models.Groups;
 import com.example.tuesdb.models.Permissions;
 import com.example.tuesdb.models.Users;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.TypedQuery;
 import jakarta.transaction.Transactional;
-import org.apache.catalina.User;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.util.CollectionUtils;
 
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @org.springframework.stereotype.Repository
 public class TuesRepository {
